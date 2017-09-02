@@ -1,0 +1,11 @@
+*.rpt
+*.done
+*.summary
+*.pin
+*.pof
+*.qpf
+*.qsf
+*.qws
+*.sof
+*/db
+*/incremental_db
