@@ -1,0 +1,43 @@
+Quartus II
+Version 9.1 Build 222 10/21/2009 SJ Web Edition
+45
+3500
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+lab-1
+# storage
+db|lab-1.(0).cnf
+db|lab-1.(0).cnf
+# case_insensitive
+# source_file
+lab-1.bdf
+9fc88abecfdbdebdfa7319805913a3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
