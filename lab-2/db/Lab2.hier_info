@@ -1,0 +1,363 @@
+|ClockGenerator
+out <= FrequencyDividerBlock:inst.out
+C_in => MNBlock:inst9.C_in
+M_0 => MNBlock:inst9.M_0
+M_1 => MNBlock:inst9.M_1
+M_2 => MNBlock:inst9.M_2
+M_3 => MNBlock:inst9.M_3
+N_0 => MNBlock:inst9.N_0
+N_1 => MNBlock:inst9.N_1
+N_2 => MNBlock:inst9.N_2
+N_3 => MNBlock:inst9.N_3
+Res[0] <= ReferenceClockBlock:inst10.Res[0]
+Res[1] <= ReferenceClockBlock:inst10.Res[1]
+Res[2] <= ReferenceClockBlock:inst10.Res[2]
+Res[3] <= ReferenceClockBlock:inst10.Res[3]
+Res[4] <= ReferenceClockBlock:inst10.Res[4]
+Res[5] <= ReferenceClockBlock:inst10.Res[5]
+Res[6] <= ReferenceClockBlock:inst10.Res[6]
+Res[7] <= ReferenceClockBlock:inst10.Res[7]
+Res[8] <= ReferenceClockBlock:inst10.Res[8]
+Res[9] <= ReferenceClockBlock:inst10.Res[9]
+Res[10] <= ReferenceClockBlock:inst10.Res[10]
+Res[11] <= ReferenceClockBlock:inst10.Res[11]
+Res[12] <= ReferenceClockBlock:inst10.Res[12]
+Res[13] <= ReferenceClockBlock:inst10.Res[13]
+Res[14] <= ReferenceClockBlock:inst10.Res[14]
+Res[15] <= ReferenceClockBlock:inst10.Res[15]
+
+
+|ClockGenerator|FrequencyDividerBlock:inst
+out <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+C_in => inst7.ACLR
+C_in => inst7.CLK
+C_in => inst19.IN0
+C_in => 74163:inst.CLK
+C_in => inst15.CLK
+
+
+|ClockGenerator|FrequencyDividerBlock:inst|74163:inst
+clk => f74163:sub.clk
+ldn => f74163:sub.ldn
+clrn => ~NO_FANOUT~
+enp => f74163:sub.enp
+ent => f74163:sub.ent
+d => f74163:sub.d
+c => f74163:sub.c
+b => f74163:sub.b
+a => f74163:sub.a
+qd <= f74163:sub.qd
+qc <= f74163:sub.qc
+qb <= f74163:sub.qb
+qa <= f74163:sub.qa
+rco <= f74163:sub.rco
+
+
+|ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub
+RCO <= 129.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 134.CLK
+CLK => 122.CLK
+CLK => 111.CLK
+CLK => 34.CLK
+CLRN => 137.IN0
+CLRN => 126.IN0
+CLRN => 115.IN0
+CLRN => 68.IN0
+D => 136.IN0
+LDN => 144.IN0
+LDN => 132.IN0
+LDN => 121.IN0
+LDN => 110.IN0
+LDN => 71.IN0
+ENP => 130.IN0
+ENP => 119.IN0
+ENP => 108.IN0
+ENP => 105.IN0
+C => 124.IN0
+B => 113.IN0
+A => 70.IN0
+ENT => 140.DATAIN
+QD <= 134.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 122.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 111.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ClockGenerator|MNBlock:inst9
+out <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+C_in => inst16.IN0
+C_in => 74163:inst.CLK
+C_in => inst45.IN0
+N_2 => 7485:inst7.B2
+N_0 => 7485:inst7.B0
+N_3 => 7485:inst7.B3
+N_1 => 7485:inst7.B1
+M_2 => 7485:inst6.B2
+M_0 => 7485:inst6.B0
+M_3 => 7485:inst6.B3
+M_1 => 7485:inst6.B1
+
+
+|ClockGenerator|MNBlock:inst9|7485:inst7
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => ~NO_FANOUT~
+albi => ~NO_FANOUT~
+aebi => ~NO_FANOUT~
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+
+|ClockGenerator|MNBlock:inst9|74163:inst
+clk => f74163:sub.clk
+ldn => f74163:sub.ldn
+clrn => ~NO_FANOUT~
+enp => f74163:sub.enp
+ent => f74163:sub.ent
+d => f74163:sub.d
+c => f74163:sub.c
+b => f74163:sub.b
+a => f74163:sub.a
+qd <= f74163:sub.qd
+qc <= f74163:sub.qc
+qb <= f74163:sub.qb
+qa <= f74163:sub.qa
+rco <= f74163:sub.rco
+
+
+|ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub
+RCO <= 129.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 134.CLK
+CLK => 122.CLK
+CLK => 111.CLK
+CLK => 34.CLK
+CLRN => 137.IN0
+CLRN => 126.IN0
+CLRN => 115.IN0
+CLRN => 68.IN0
+D => 136.IN0
+LDN => 144.IN0
+LDN => 132.IN0
+LDN => 121.IN0
+LDN => 110.IN0
+LDN => 71.IN0
+ENP => 130.IN0
+ENP => 119.IN0
+ENP => 108.IN0
+ENP => 105.IN0
+C => 124.IN0
+B => 113.IN0
+A => 70.IN0
+ENT => 140.DATAIN
+QD <= 134.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 122.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 111.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ClockGenerator|MNBlock:inst9|7485:inst6
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => ~NO_FANOUT~
+albi => ~NO_FANOUT~
+aebi => ~NO_FANOUT~
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+
+|ClockGenerator|ReferenceClockBlock:inst10
+Res[0] <= 16dmux:inst.Q0
+Res[1] <= 16dmux:inst.Q1
+Res[2] <= 16dmux:inst.Q2
+Res[3] <= 16dmux:inst.Q3
+Res[4] <= 16dmux:inst.Q4
+Res[5] <= 16dmux:inst.Q5
+Res[6] <= 16dmux:inst.Q6
+Res[7] <= 16dmux:inst.Q7
+Res[8] <= 16dmux:inst.Q8
+Res[9] <= 16dmux:inst.Q9
+Res[10] <= 16dmux:inst.Q10
+Res[11] <= 16dmux:inst.Q11
+Res[12] <= 16dmux:inst.Q12
+Res[13] <= 16dmux:inst.Q13
+Res[14] <= 16dmux:inst.Q14
+Res[15] <= 16dmux:inst.Q15
+C_in => 74163:inst1.CLK
+
+
+|ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst
+Q8 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A => 5.IN0
+A => 22.IN0
+A => 14.IN0
+A => 12.IN0
+A => 10.IN0
+A => 26.IN0
+A => 28.IN0
+A => 30.IN0
+A => 32.IN0
+B => 6.IN0
+B => 20.IN1
+B => 14.IN2
+B => 11.IN1
+B => 10.IN1
+B => 26.IN1
+B => 27.IN1
+B => 30.IN1
+B => 31.IN1
+C => 7.IN0
+C => 13.IN2
+C => 12.IN2
+C => 11.IN2
+C => 10.IN2
+C => 26.IN2
+C => 27.IN2
+C => 28.IN2
+C => 29.IN2
+D => 24.IN3
+D => 22.IN3
+D => 20.IN3
+D => 14.IN3
+D => 13.IN3
+D => 12.IN3
+D => 11.IN3
+D => 10.IN3
+D => 8.IN0
+Q9 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+Q10 <= 20.DB_MAX_OUTPUT_PORT_TYPE
+Q11 <= 14.DB_MAX_OUTPUT_PORT_TYPE
+Q12 <= 13.DB_MAX_OUTPUT_PORT_TYPE
+Q13 <= 12.DB_MAX_OUTPUT_PORT_TYPE
+Q14 <= 11.DB_MAX_OUTPUT_PORT_TYPE
+Q15 <= 10.DB_MAX_OUTPUT_PORT_TYPE
+Q7 <= 26.DB_MAX_OUTPUT_PORT_TYPE
+Q6 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+Q5 <= 28.DB_MAX_OUTPUT_PORT_TYPE
+Q4 <= 29.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= 30.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= 31.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= 32.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= 33.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ClockGenerator|ReferenceClockBlock:inst10|74163:inst1
+clk => f74163:sub.clk
+ldn => f74163:sub.ldn
+clrn => ~NO_FANOUT~
+enp => f74163:sub.enp
+ent => f74163:sub.ent
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74163:sub.qd
+qc <= f74163:sub.qc
+qb <= f74163:sub.qb
+qa <= f74163:sub.qa
+rco <= f74163:sub.rco
+
+
+|ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub
+RCO <= 129.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 134.CLK
+CLK => 122.CLK
+CLK => 111.CLK
+CLK => 34.CLK
+CLRN => 137.IN0
+CLRN => 126.IN0
+CLRN => 115.IN0
+CLRN => 68.IN0
+D => 136.IN0
+LDN => 144.IN0
+LDN => 132.IN0
+LDN => 121.IN0
+LDN => 110.IN0
+LDN => 71.IN0
+ENP => 130.IN0
+ENP => 119.IN0
+ENP => 108.IN0
+ENP => 105.IN0
+C => 124.IN0
+B => 113.IN0
+A => 70.IN0
+ENT => 140.DATAIN
+QD <= 134.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 122.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 111.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+
