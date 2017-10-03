@@ -1,0 +1,165 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "OUTRAM[7]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTRAM[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTRAM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTRAM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTRAM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTRAM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTRAM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTRAM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "q[7]",
+					"strict" : false
+				},
+				{
+					"name" : "q[6]",
+					"strict" : false
+				},
+				{
+					"name" : "q[5]",
+					"strict" : false
+				},
+				{
+					"name" : "q[4]",
+					"strict" : false
+				},
+				{
+					"name" : "q[3]",
+					"strict" : false
+				},
+				{
+					"name" : "q[2]",
+					"strict" : false
+				},
+				{
+					"name" : "q[1]",
+					"strict" : false
+				},
+				{
+					"name" : "q[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RegOut[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RegOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RegOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RegOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RegOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RegOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RegOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RegOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wrenRAM",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "Ramaddress1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Ramaddress1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ramaddress1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ramaddress1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Ramaddress1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ROMClock",
+					"strict" : false
+				},
+				{
+					"name" : "address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sclr",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -9,6 +9,7 @@ N_0 => MNBlock:inst9.N_0
 N_1 => MNBlock:inst9.N_1
 N_2 => MNBlock:inst9.N_2
 N_3 => MNBlock:inst9.N_3
+R <= MNBlock:inst9.out
 Res[0] <= ReferenceClockBlock:inst10.Res[0]
 Res[1] <= ReferenceClockBlock:inst10.Res[1]
 Res[2] <= ReferenceClockBlock:inst10.Res[2]
