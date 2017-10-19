@@ -1,0 +1,113 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 160 176)
+	(text "FlagsRegister" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "C" (rect 0 0 8 14)(font "Arial" (font_size 8)))
+		(text "C" (rect 21 27 29 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "E" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "E" (rect 21 43 28 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CFlag" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "CFlag" (rect 21 59 52 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "ZFlag" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "ZFlag" (rect 21 75 52 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "SFlag" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "SFlag" (rect 21 91 52 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "OFlag" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "OFlag" (rect 21 107 54 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "DFlag" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "DFlag" (rect 21 123 52 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "CFlagOut" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "CFlagOut" (rect 72 27 123 41)(font "Arial" (font_size 8)))
+		(line (pt 144 32)(pt 128 32)(line_width 1))
+	)
+	(port
+		(pt 144 48)
+		(output)
+		(text "ZFlagOut" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "ZFlagOut" (rect 72 43 123 57)(font "Arial" (font_size 8)))
+		(line (pt 144 48)(pt 128 48)(line_width 1))
+	)
+	(port
+		(pt 144 64)
+		(output)
+		(text "SFlagOut" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "SFlagOut" (rect 72 59 123 73)(font "Arial" (font_size 8)))
+		(line (pt 144 64)(pt 128 64)(line_width 1))
+	)
+	(port
+		(pt 144 80)
+		(output)
+		(text "OFlagOut" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "OFlagOut" (rect 70 75 123 89)(font "Arial" (font_size 8)))
+		(line (pt 144 80)(pt 128 80)(line_width 1))
+	)
+	(port
+		(pt 144 96)
+		(output)
+		(text "DFlagOut" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "DFlagOut" (rect 72 91 123 105)(font "Arial" (font_size 8)))
+		(line (pt 144 96)(pt 128 96)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 144)(line_width 1))
+	)
+)
