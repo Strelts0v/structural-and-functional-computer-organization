@@ -80,6 +80,10 @@ A0
 -1
 3
 }
+# hierarchies {
+MNBlock:inst9|7485:inst7
+MNBlock:inst9|7485:inst6
+}
 # macro_sequence
 
 # end
@@ -96,6 +100,10 @@ c:|altera|91|quartus|libraries|others|maxplus2|f7485.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+MNBlock:inst9|7485:inst7|f7485:sub
+MNBlock:inst9|7485:inst6|f7485:sub
 }
 # macro_sequence
 
@@ -171,7 +179,8 @@ A
 2
 }
 # hierarchies {
-74163:inst
+FrequencyDividerBlock:inst|74163:inst
+MNBlock:inst9|74163:inst
 }
 # macro_sequence
 
@@ -191,7 +200,9 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-74163:inst|f74163:sub
+FrequencyDividerBlock:inst|74163:inst|f74163:sub
+MNBlock:inst9|74163:inst|f74163:sub
+ReferenceClockBlock:inst10|74163:inst1|f74163:sub
 }
 # macro_sequence
 
@@ -210,6 +221,9 @@ mnblock.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+MNBlock:inst9
+}
 # macro_sequence
 
 # end
@@ -227,6 +241,9 @@ referenceclockblock.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+ReferenceClockBlock:inst10
+}
 # macro_sequence
 
 # end
@@ -243,6 +260,9 @@ f7825b6391322192a09197e53c934
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+ReferenceClockBlock:inst10|16dmux:inst
 }
 # macro_sequence
 
@@ -305,22 +325,8 @@ ENP
 -1
 2
 }
-# macro_sequence
-
-# end
-# entity
-ClockGenerator
-# storage
-db|Lab2.(9).cnf
-db|Lab2.(9).cnf
-# case_insensitive
-# source_file
-clockgenerator.bdf
-63b8e6c82d5cb247cc722c1be168544
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+# hierarchies {
+ReferenceClockBlock:inst10|74163:inst1
 }
 # macro_sequence
 
@@ -334,6 +340,26 @@ db|Lab2.(5).cnf
 # source_file
 frequencydividerblock.bdf
 2ef8dd11b22ac6f3d7d5fc8e650e3cb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FrequencyDividerBlock:inst
+}
+# macro_sequence
+
+# end
+# entity
+ClockGenerator
+# storage
+db|Lab2.(9).cnf
+db|Lab2.(9).cnf
+# case_insensitive
+# source_file
+clockgenerator.bdf
+1b9170956f6876c8257fe93d73a6ca76
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

@@ -1,5 +1,5 @@
 Simulator report for Lab2
-Mon Sep 18 21:19:20 2017
+Tue Sep 19 16:33:12 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -44,42 +44,42 @@ applicable agreement for further details.
 ; Type                        ; Value        ;
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
-; Simulation End Time         ; 4.0 us       ;
-; Simulation Netlist Size     ; 124 nodes    ;
-; Simulation Coverage         ;       0.81 % ;
-; Total Number of Transitions ; 834          ;
+; Simulation End Time         ; 200.0 us     ;
+; Simulation Netlist Size     ; 125 nodes    ;
+; Simulation Coverage         ;      91.20 % ;
+; Total Number of Transitions ; 132058       ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; MAX II       ;
 +-----------------------------+--------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                    ;
-+--------------------------------------------------------------------------------------------+--------------------------+---------------+
-; Option                                                                                     ; Setting                  ; Default Value ;
-+--------------------------------------------------------------------------------------------+--------------------------+---------------+
-; Simulation mode                                                                            ; Functional               ; Timing        ;
-; Start time                                                                                 ; 0 ns                     ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF                     ;               ;
-; Vector input source                                                                        ; FrequencyDividerForm.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                       ; On            ;
-; Check outputs                                                                              ; Off                      ; Off           ;
-; Report simulation coverage                                                                 ; On                       ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                       ; On            ;
-; Display missing 1-value coverage report                                                    ; On                       ; On            ;
-; Display missing 0-value coverage report                                                    ; On                       ; On            ;
-; Detect setup and hold time violations                                                      ; Off                      ; Off           ;
-; Detect glitches                                                                            ; Off                      ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                      ; Off           ;
-; Generate Signal Activity File                                                              ; Off                      ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                      ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                      ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                       ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE               ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                      ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                       ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                     ; Auto          ;
-+--------------------------------------------------------------------------------------------+--------------------------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                  ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
+; Option                                                                                     ; Setting                ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
+; Simulation mode                                                                            ; Functional             ; Timing        ;
+; Start time                                                                                 ; 0 ns                   ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                   ;               ;
+; Vector input source                                                                        ; ClockGeneratorForm.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                     ; On            ;
+; Check outputs                                                                              ; Off                    ; Off           ;
+; Report simulation coverage                                                                 ; On                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                    ; Off           ;
+; Detect glitches                                                                            ; Off                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                     ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                   ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
 
 
 +----------------------+
@@ -94,41 +94,25 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;       0.81 % ;
-; Total nodes checked                                 ; 124          ;
-; Total output ports checked                          ; 124          ;
-; Total output ports with complete 1/0-value coverage ; 1            ;
-; Total output ports with no 1/0-value coverage       ; 115          ;
-; Total output ports with no 1-value coverage         ; 118          ;
-; Total output ports with no 0-value coverage         ; 120          ;
+; Total coverage as a percentage                      ;      91.20 % ;
+; Total nodes checked                                 ; 125          ;
+; Total output ports checked                          ; 125          ;
+; Total output ports with complete 1/0-value coverage ; 114          ;
+; Total output ports with no 1/0-value coverage       ; 11           ;
+; Total output ports with no 1-value coverage         ; 11           ;
+; Total output ports with no 0-value coverage         ; 11           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                    ;
-+----------------------+----------------------+------------------+
-; Node Name            ; Output Port Name     ; Output Port Type ;
-+----------------------+----------------------+------------------+
-; |ClockGenerator|C_in ; |ClockGenerator|C_in ; out              ;
-+----------------------+----------------------+------------------+
-
-
-The following table displays output ports that do not toggle to 1 during simulation.
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                                                         ;
+; Complete 1/0-Value Coverage                                                                                                                                      ;
 +-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
 ; Node Name                                                             ; Output Port Name                                                      ; Output Port Type ;
 +-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
 ; |ClockGenerator|out                                                   ; |ClockGenerator|out                                                   ; pin_out          ;
-; |ClockGenerator|M_0                                                   ; |ClockGenerator|M_0                                                   ; out              ;
-; |ClockGenerator|M_1                                                   ; |ClockGenerator|M_1                                                   ; out              ;
-; |ClockGenerator|M_2                                                   ; |ClockGenerator|M_2                                                   ; out              ;
-; |ClockGenerator|M_3                                                   ; |ClockGenerator|M_3                                                   ; out              ;
-; |ClockGenerator|N_0                                                   ; |ClockGenerator|N_0                                                   ; out              ;
-; |ClockGenerator|N_1                                                   ; |ClockGenerator|N_1                                                   ; out              ;
-; |ClockGenerator|N_2                                                   ; |ClockGenerator|N_2                                                   ; out              ;
-; |ClockGenerator|N_3                                                   ; |ClockGenerator|N_3                                                   ; out              ;
+; |ClockGenerator|C_in                                                  ; |ClockGenerator|C_in                                                  ; out              ;
+; |ClockGenerator|R                                                     ; |ClockGenerator|R                                                     ; pin_out          ;
 ; |ClockGenerator|Res[15]                                               ; |ClockGenerator|Res[15]                                               ; pin_out          ;
 ; |ClockGenerator|Res[14]                                               ; |ClockGenerator|Res[14]                                               ; pin_out          ;
 ; |ClockGenerator|Res[13]                                               ; |ClockGenerator|Res[13]                                               ; pin_out          ;
@@ -183,135 +167,6 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|89                 ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|89                 ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|111                ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|111                ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|91                 ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|91                 ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|92                 ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|92                 ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|134               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|134               ; regout           ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|132               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|132               ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|131               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|131               ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|130               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|130               ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|117               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|117               ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|122               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|122               ; regout           ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|121               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|121               ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|120               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|120               ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|119               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|119               ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|106               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|106               ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|111               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|111               ; regout           ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|69                ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|69                ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|71                ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|71                ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|72                ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|72                ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|105               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|105               ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|140               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|140               ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|109                ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|109                ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|110                ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|110                ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|90                 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|90                 ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|89                 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|89                 ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|111                ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|111                ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|91                 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|91                 ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|92                 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|92                 ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|inst20                     ; |ClockGenerator|FrequencyDividerBlock:inst|inst20                     ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|inst7                      ; |ClockGenerator|FrequencyDividerBlock:inst|inst7                      ; regout           ;
-; |ClockGenerator|FrequencyDividerBlock:inst|inst15                     ; |ClockGenerator|FrequencyDividerBlock:inst|inst15                     ; regout           ;
-; |ClockGenerator|FrequencyDividerBlock:inst|inst15~0                   ; |ClockGenerator|FrequencyDividerBlock:inst|inst15~0                   ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|inst13                     ; |ClockGenerator|FrequencyDividerBlock:inst|inst13                     ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|inst12                     ; |ClockGenerator|FrequencyDividerBlock:inst|inst12                     ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|inst5                      ; |ClockGenerator|FrequencyDividerBlock:inst|inst5                      ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|inst14                     ; |ClockGenerator|FrequencyDividerBlock:inst|inst14                     ; regout           ;
-; |ClockGenerator|FrequencyDividerBlock:inst|inst9                      ; |ClockGenerator|FrequencyDividerBlock:inst|inst9                      ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|inst1                      ; |ClockGenerator|FrequencyDividerBlock:inst|inst1                      ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|134  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|134  ; regout           ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|132  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|132  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|131  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|131  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|130  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|130  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|117  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|117  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|122  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|122  ; regout           ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|121  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|121  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|120  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|120  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|119  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|119  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|106  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|106  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|111  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|111  ; regout           ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|110  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|110  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|109  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|109  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|108  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|108  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|73   ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|73   ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|34   ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|34   ; regout           ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|69   ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|69   ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|71   ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|71   ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|72   ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|72   ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|105  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|105  ; out0             ;
-; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|140  ; |ClockGenerator|FrequencyDividerBlock:inst|74163:inst|f74163:sub|140  ; out0             ;
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
-
-
-The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                                                         ;
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
-; Node Name                                                             ; Output Port Name                                                      ; Output Port Type ;
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
-; |ClockGenerator|out                                                   ; |ClockGenerator|out                                                   ; pin_out          ;
-; |ClockGenerator|M_0                                                   ; |ClockGenerator|M_0                                                   ; out              ;
-; |ClockGenerator|M_1                                                   ; |ClockGenerator|M_1                                                   ; out              ;
-; |ClockGenerator|M_2                                                   ; |ClockGenerator|M_2                                                   ; out              ;
-; |ClockGenerator|M_3                                                   ; |ClockGenerator|M_3                                                   ; out              ;
-; |ClockGenerator|N_0                                                   ; |ClockGenerator|N_0                                                   ; out              ;
-; |ClockGenerator|N_1                                                   ; |ClockGenerator|N_1                                                   ; out              ;
-; |ClockGenerator|N_2                                                   ; |ClockGenerator|N_2                                                   ; out              ;
-; |ClockGenerator|N_3                                                   ; |ClockGenerator|N_3                                                   ; out              ;
-; |ClockGenerator|Res[15]                                               ; |ClockGenerator|Res[15]                                               ; pin_out          ;
-; |ClockGenerator|Res[14]                                               ; |ClockGenerator|Res[14]                                               ; pin_out          ;
-; |ClockGenerator|Res[13]                                               ; |ClockGenerator|Res[13]                                               ; pin_out          ;
-; |ClockGenerator|Res[12]                                               ; |ClockGenerator|Res[12]                                               ; pin_out          ;
-; |ClockGenerator|Res[11]                                               ; |ClockGenerator|Res[11]                                               ; pin_out          ;
-; |ClockGenerator|Res[10]                                               ; |ClockGenerator|Res[10]                                               ; pin_out          ;
-; |ClockGenerator|Res[9]                                                ; |ClockGenerator|Res[9]                                                ; pin_out          ;
-; |ClockGenerator|Res[8]                                                ; |ClockGenerator|Res[8]                                                ; pin_out          ;
-; |ClockGenerator|Res[7]                                                ; |ClockGenerator|Res[7]                                                ; pin_out          ;
-; |ClockGenerator|Res[6]                                                ; |ClockGenerator|Res[6]                                                ; pin_out          ;
-; |ClockGenerator|Res[5]                                                ; |ClockGenerator|Res[5]                                                ; pin_out          ;
-; |ClockGenerator|Res[4]                                                ; |ClockGenerator|Res[4]                                                ; pin_out          ;
-; |ClockGenerator|Res[3]                                                ; |ClockGenerator|Res[3]                                                ; pin_out          ;
-; |ClockGenerator|Res[2]                                                ; |ClockGenerator|Res[2]                                                ; pin_out          ;
-; |ClockGenerator|Res[1]                                                ; |ClockGenerator|Res[1]                                                ; pin_out          ;
-; |ClockGenerator|Res[0]                                                ; |ClockGenerator|Res[0]                                                ; pin_out          ;
-; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|134 ; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|134 ; regout           ;
-; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|131 ; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|131 ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|117 ; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|117 ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|122 ; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|122 ; regout           ;
-; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|120 ; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|120 ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|106 ; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|106 ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|111 ; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|111 ; regout           ;
-; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|109 ; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|109 ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|74  ; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|74  ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|34  ; |ClockGenerator|ReferenceClockBlock:inst10|74163:inst1|f74163:sub|34  ; regout           ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|24             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|24             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|22             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|22             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|20             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|20             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|14             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|14             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|13             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|13             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|12             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|12             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|11             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|11             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|10             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|10             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|26             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|26             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|27             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|27             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|28             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|28             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|29             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|29             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|30             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|30             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|31             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|31             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|32             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|32             ; out0             ;
-; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|33             ; |ClockGenerator|ReferenceClockBlock:inst10|16dmux:inst|33             ; out0             ;
-; |ClockGenerator|MNBlock:inst9|inst15                                  ; |ClockGenerator|MNBlock:inst9|inst15                                  ; regout           ;
-; |ClockGenerator|MNBlock:inst9|inst15~0                                ; |ClockGenerator|MNBlock:inst9|inst15~0                                ; out0             ;
-; |ClockGenerator|MNBlock:inst9|inst13                                  ; |ClockGenerator|MNBlock:inst9|inst13                                  ; out0             ;
-; |ClockGenerator|MNBlock:inst9|inst12                                  ; |ClockGenerator|MNBlock:inst9|inst12                                  ; out0             ;
-; |ClockGenerator|MNBlock:inst9|inst14                                  ; |ClockGenerator|MNBlock:inst9|inst14                                  ; regout           ;
-; |ClockGenerator|MNBlock:inst9|inst9                                   ; |ClockGenerator|MNBlock:inst9|inst9                                   ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|109                ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|109                ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|110                ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|110                ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|90                 ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|90                 ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|89                 ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|89                 ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|111                ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|111                ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|91                 ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|91                 ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|92                 ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|92                 ; out0             ;
-; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|134               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|134               ; regout           ;
 ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|132               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|132               ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|131               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|131               ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|130               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|130               ; out0             ;
@@ -327,6 +182,9 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|108               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|108               ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|73                ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|73                ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|34                ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|34                ; regout           ;
+; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|69                ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|69                ; out0             ;
+; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|71                ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|71                ; out0             ;
+; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|72                ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|72                ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|105               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|105               ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|140               ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|140               ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|109                ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|109                ; out0             ;
@@ -335,7 +193,6 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|89                 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|89                 ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|111                ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|111                ; out0             ;
 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|91                 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|91                 ; out0             ;
-; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|92                 ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|92                 ; out0             ;
 ; |ClockGenerator|FrequencyDividerBlock:inst|inst20                     ; |ClockGenerator|FrequencyDividerBlock:inst|inst20                     ; out0             ;
 ; |ClockGenerator|FrequencyDividerBlock:inst|inst7                      ; |ClockGenerator|FrequencyDividerBlock:inst|inst7                      ; regout           ;
 ; |ClockGenerator|FrequencyDividerBlock:inst|inst15                     ; |ClockGenerator|FrequencyDividerBlock:inst|inst15                     ; regout           ;
@@ -370,6 +227,46 @@ The following table displays output ports that do not toggle to 0 during simulat
 +-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
 
 
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                             ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+; Node Name                                               ; Output Port Name                                        ; Output Port Type ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+; |ClockGenerator|M_0                                     ; |ClockGenerator|M_0                                     ; out              ;
+; |ClockGenerator|M_1                                     ; |ClockGenerator|M_1                                     ; out              ;
+; |ClockGenerator|M_2                                     ; |ClockGenerator|M_2                                     ; out              ;
+; |ClockGenerator|M_3                                     ; |ClockGenerator|M_3                                     ; out              ;
+; |ClockGenerator|N_0                                     ; |ClockGenerator|N_0                                     ; out              ;
+; |ClockGenerator|N_1                                     ; |ClockGenerator|N_1                                     ; out              ;
+; |ClockGenerator|N_2                                     ; |ClockGenerator|N_2                                     ; out              ;
+; |ClockGenerator|N_3                                     ; |ClockGenerator|N_3                                     ; out              ;
+; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|92   ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|92   ; out0             ;
+; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|134 ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|134 ; regout           ;
+; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|92   ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|92   ; out0             ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                             ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+; Node Name                                               ; Output Port Name                                        ; Output Port Type ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+; |ClockGenerator|M_0                                     ; |ClockGenerator|M_0                                     ; out              ;
+; |ClockGenerator|M_1                                     ; |ClockGenerator|M_1                                     ; out              ;
+; |ClockGenerator|M_2                                     ; |ClockGenerator|M_2                                     ; out              ;
+; |ClockGenerator|M_3                                     ; |ClockGenerator|M_3                                     ; out              ;
+; |ClockGenerator|N_0                                     ; |ClockGenerator|N_0                                     ; out              ;
+; |ClockGenerator|N_1                                     ; |ClockGenerator|N_1                                     ; out              ;
+; |ClockGenerator|N_2                                     ; |ClockGenerator|N_2                                     ; out              ;
+; |ClockGenerator|N_3                                     ; |ClockGenerator|N_3                                     ; out              ;
+; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|92   ; |ClockGenerator|MNBlock:inst9|7485:inst6|f7485:sub|92   ; out0             ;
+; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|134 ; |ClockGenerator|MNBlock:inst9|74163:inst|f74163:sub|134 ; regout           ;
+; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|92   ; |ClockGenerator|MNBlock:inst9|7485:inst7|f7485:sub|92   ; out0             ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+
+
 +---------------------+
 ; Simulator INI Usage ;
 +--------+------------+
@@ -383,29 +280,21 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Mon Sep 18 21:19:20 2017
+    Info: Processing started: Tue Sep 19 16:33:10 2017
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Lab2 -c Lab2
-Info: Using vector source file "G:/Archive/Quartus projects/lab-2/FrequencyDividerForm.vwf"
+Info: Using vector source file "G:/Archive/Quartus projects/lab-2/ClockGeneratorForm.vwf"
 Info: Overwriting simulation input file with simulation results
-    Info: A backup of FrequencyDividerForm.vwf called Lab2.sim_ori.vwf has been created in the db folder
-Warning: Can't find signal in vector source file for input pin "|ClockGenerator|M_0"
-Warning: Can't find signal in vector source file for input pin "|ClockGenerator|M_1"
-Warning: Can't find signal in vector source file for input pin "|ClockGenerator|M_2"
-Warning: Can't find signal in vector source file for input pin "|ClockGenerator|M_3"
-Warning: Can't find signal in vector source file for input pin "|ClockGenerator|N_0"
-Warning: Can't find signal in vector source file for input pin "|ClockGenerator|N_1"
-Warning: Can't find signal in vector source file for input pin "|ClockGenerator|N_2"
-Warning: Can't find signal in vector source file for input pin "|ClockGenerator|N_3"
+    Info: A backup of ClockGeneratorForm.vwf called Lab2.sim_ori.vwf has been created in the db folder
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is       0.81 %
-Info: Number of transitions in simulation is 834
-Info: Vector file FrequencyDividerForm.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II Simulator was successful. 0 errors, 8 warnings
+Info: Simulation coverage is      91.20 %
+Info: Number of transitions in simulation is 132058
+Info: Vector file ClockGeneratorForm.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 162 megabytes
-    Info: Processing ended: Mon Sep 18 21:19:20 2017
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Tue Sep 19 16:33:12 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

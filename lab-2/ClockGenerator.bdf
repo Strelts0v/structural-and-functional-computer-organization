@@ -196,6 +196,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
+(pin
+	(output)
+	(rect 216 240 392 256)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "R" (rect 90 0 98 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
 (symbol
 	(rect 216 64 312 160)
 	(text "FrequencyDividerBlock" (rect 5 0 135 14)(font "Arial" (font_size 8)))
@@ -355,10 +371,6 @@ applicable agreement for further details.
 	(pt 64 224)
 )
 (connector
-	(pt 160 96)
-	(pt 216 96)
-)
-(connector
 	(pt 424 216)
 	(pt 392 216)
 )
@@ -379,4 +391,21 @@ applicable agreement for further details.
 	(pt 392 96)
 	(pt 432 96)
 )
+(connector
+	(pt 184 96)
+	(pt 184 248)
+)
+(connector
+	(pt 184 248)
+	(pt 216 248)
+)
+(connector
+	(pt 160 96)
+	(pt 184 96)
+)
+(connector
+	(pt 184 96)
+	(pt 216 96)
+)
 (junction (pt 392 96))
+(junction (pt 184 96))
