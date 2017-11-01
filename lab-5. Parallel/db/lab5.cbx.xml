@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab5">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Device:inst5|lpm_counter0:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_l4i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Device:inst7|lpm_counter0:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_l4i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Main|lpm_constant1:inst8|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_8e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Device:inst5|lpm_compare0:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_big.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Device:inst7|lpm_compare0:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_big.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Main|lpm_constant0:inst6|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_7e6.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
